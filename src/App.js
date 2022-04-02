@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+import React from 'react';
+import Navbar from "./components/Navbar/Navbar";
+// import CarouselContainer from './components/Carousel/CarouselContainer';
+// import Grid from './components/Grid/Grid';
+// import Clients from './components/Clients/Clients';
+// import Testimonials from './components/Testimonals/Testimonals';
+// import Example from './components/Example/Example';
+import Profile from './components/Profile/Profile';
+import Skills from './components/Skills/Skills';
+import PortfolioSlider from './components/PortfolioSlider/PortfolioSlider';
+import ContactUs from './components/ContactUs/ContactUs';
+import SocialMedia from './components/SocialMedia/SocialMedia';
 import './App.css';
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Profile />
+      <Skills />
+      <PortfolioSlider />
+      <ContactUs />
+      <SocialMedia />
     </div>
   );
 }

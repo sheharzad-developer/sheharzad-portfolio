@@ -12,11 +12,9 @@ const SocialMedia = () => {
                 <div class="col-sm">
                     <div class="SocialMediaLists">
                         <ul>
-                            <li><FontAwesomeIcon icon="fa-brands fa-facebook-f" /></li>
-                            <li>Facebook</li>
-                            <li>Facebook</li>
-                            <li>Facebook</li>
-                            <li>Facebook</li>
+                            <li><i class="fab fa-facebook-f" /></li>
+                            <li><i class="fab fa-twitter" /></li>
+                            <li><i class="fab fa-linkedin" /></li>
                         </ul>
                     </div>
                 </div>

@@ -52,11 +52,26 @@
     color: white;
 }
 
+@media only screen and (min-width: 360px) and (max-width: 760px){
+    .circle {
+        width: 100px;
+        height: 100px;
+        background-size: 50px;
+      }
+    .HTMLBox {
+        height:97%;
+    }
+}
+
 @media only screen and (min-width: 375px) and (max-width: 767px){
     .circle {
         width: 80px;
         height: 80px;
         background-size: 50px;
+    }
+
+    .HTMLBox {
+        height:97%;
     }
 }
 

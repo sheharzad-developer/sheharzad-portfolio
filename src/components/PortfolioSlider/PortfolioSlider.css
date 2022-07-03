@@ -12,3 +12,23 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
 }
+
+.PortfolioBox {
+    height:300px;
+    margin-bottom:20px;
+    border: 1px solid #000;
+    background-color: brown;
+}
+
+.PortfolioBox img {
+    width:348px;
+}
+.PortfolioText {
+    margin: 15px 0 0 0;
+    
+}
+
+.PortfolioText h2 {
+    font-size:20px;
+    color:white;
+}

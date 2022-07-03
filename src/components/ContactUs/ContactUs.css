@@ -12,3 +12,26 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
 }
+
+.Contact {
+    padding:60px 0;
+}
+
+.ContactTitle span {
+    font-weight: bold;
+}
+
+.ContactTitle span a {
+    text-decoration: none;
+    color: black;
+}
+
+.ContactTitle span a {
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+}
+
+table {
+    width:100%;
+}

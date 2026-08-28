@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { nav, profile } from "@/lib/data";
+import { Logo } from "./Logo";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -21,8 +22,8 @@ export function Navbar() {
       }`}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <a href="#home" className="text-sm font-semibold tracking-tight">
-          {profile.name}
+        <a href="#home" aria-label={profile.name} className="flex items-center">
+          <Logo className="h-8 w-8 shrink-0" />
         </a>
 
         <nav className="hidden items-center gap-8 text-sm text-muted md:flex">

@@ -80,14 +80,14 @@ export function Hero() {
           </dl>
         </div>
 
-        <div className="relative mx-auto hidden aspect-square w-full max-w-sm items-center justify-center md:flex">
+        <div className="relative order-first mx-auto flex aspect-square w-full max-w-[220px] items-center justify-center sm:max-w-xs md:order-none md:max-w-sm">
           <div className="absolute inset-0 rounded-[2.5rem] border border-border bg-gradient-to-br from-surface to-surface-2" />
           <div className="absolute inset-6 overflow-hidden rounded-[2rem] border border-border/80 bg-gradient-to-br from-accent-a/20 via-transparent to-accent-b/20">
             <Image
               src="/Profile.png"
               alt={profile.name}
               fill
-              sizes="(max-width: 768px) 0px, 24rem"
+              sizes="(max-width: 768px) 220px, 24rem"
               className="object-cover"
               priority
             />

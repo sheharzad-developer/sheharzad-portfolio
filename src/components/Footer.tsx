@@ -17,6 +17,14 @@ function LinkedinIcon(props: SVGProps<SVGSVGElement>) {
   );
 }
 
+function SubstackIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+      <path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z" />
+    </svg>
+  );
+}
+
 function YoutubeIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
@@ -28,6 +36,7 @@ function YoutubeIcon(props: SVGProps<SVGSVGElement>) {
 const iconMap: Record<string, (props: SVGProps<SVGSVGElement>) => React.JSX.Element> = {
   GitHub: GithubIcon,
   LinkedIn: LinkedinIcon,
+  Substack: SubstackIcon,
 };
 
 export function Footer() {

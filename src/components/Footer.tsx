@@ -33,10 +33,34 @@ function YoutubeIcon(props: SVGProps<SVGSVGElement>) {
   );
 }
 
-const iconMap: Record<string, (props: SVGProps<SVGSVGElement>) => React.JSX.Element> = {
-  GitHub: GithubIcon,
-  LinkedIn: LinkedinIcon,
-  Substack: SubstackIcon,
+const iconMap: Record<
+  string,
+  {
+    Icon: (props: SVGProps<SVGSVGElement>) => React.JSX.Element;
+    iconClass: string;
+    badgeClass: string;
+  }
+> = {
+  GitHub: {
+    Icon: GithubIcon,
+    iconClass: "text-foreground",
+    badgeClass: "bg-foreground/10",
+  },
+  LinkedIn: {
+    Icon: LinkedinIcon,
+    iconClass: "text-sky-400",
+    badgeClass: "bg-sky-400/10",
+  },
+  Substack: {
+    Icon: SubstackIcon,
+    iconClass: "text-orange-500",
+    badgeClass: "bg-orange-500/10",
+  },
+  YouTube: {
+    Icon: YoutubeIcon,
+    iconClass: "text-red-500",
+    badgeClass: "bg-red-500/10",
+  },
 };
 
 export function Footer() {
@@ -45,12 +69,12 @@ export function Footer() {
 
   return (
     <footer className="border-t border-border py-10">
-      <div className="mx-auto flex max-w-6xl flex-col items-center gap-4 px-6 text-sm text-muted sm:flex-row sm:justify-between">
+      <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 px-6 text-sm text-muted sm:flex-row sm:justify-between">
         <p>© {year} {profile.name}. All rights reserved.</p>
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-3">
           {iconSocials.map((social) => {
-            const Icon = iconMap[social.label];
+            const { Icon, iconClass, badgeClass } = iconMap[social.label];
             return (
               <a
                 key={social.label}
@@ -58,21 +82,13 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={social.label}
-                className="transition-colors hover:text-foreground"
+                title={social.label}
+                className={`flex h-10 w-10 items-center justify-center rounded-full ${badgeClass} transition-transform hover:scale-110`}
               >
-                <Icon className="h-4 w-4" />
+                <Icon className={`h-[18px] w-[18px] ${iconClass}`} />
               </a>
             );
           })}
-          <a
-            href="https://www.youtube.com/channel/UCTYt7upl1YwBwdxGb8lmQwg"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="YouTube"
-            className="transition-colors hover:text-foreground"
-          >
-            <YoutubeIcon className="h-4 w-4" />
-          </a>
         </div>
       </div>
     </footer>

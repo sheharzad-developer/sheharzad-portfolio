@@ -30,6 +30,10 @@ export const profile = {
     },
     { label: "X", href: "https://x.com/sheharzad_sala1" },
     { label: "Substack", href: "https://substack.com/@sheharzadsalahuddin" },
+    {
+      label: "YouTube",
+      href: "https://www.youtube.com/channel/UCTYt7upl1YwBwdxGb8lmQwg",
+    },
     { label: "Upwork", href: "https://www.upwork.com/freelancers/~01264a0282005eca30" },
     { label: "Fiverr", href: "https://www.fiverr.com/sellers/sheharzad_1/" },
     { label: "LeetCode", href: "https://leetcode.com/u/sheharzad-developer/" },

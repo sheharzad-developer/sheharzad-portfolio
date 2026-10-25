@@ -21,7 +21,7 @@ export const profile = {
   phone: "+92 339 0140466",
   whatsapp: "https://wa.me/923390140466",
   calendly: "https://calendly.com/sheharzad-salahuddin9000/new-meeting",
-  resume: "/resume/Sheharzad-Resume.pdf",
+  resume: "/resume/Sheharzad_Software-Engineer.pdf",
   socials: [
     { label: "GitHub", href: "https://github.com/sheharzad-developer" },
     {
@@ -130,14 +130,30 @@ export const projects: Project[] = [
     code: "https://github.com/sheharzad-developer/Chatbot_Internship",
   },
   {
+    id: "015",
+    category: "AI / Education",
+    year: "2026",
+    status: "live",
+    title: "AI Study Companion",
+    problem:
+      "Students need quick explanations, practice quizzes, and study plans in one place — not a blank chatbot they have to prompt from scratch every time.",
+    credit: "Solo project",
+    tags: ["Expo", "React Native", "Express", "Groq LLM", "TypeScript"],
+    live: "https://ai-study-companion-ecru-five.vercel.app/",
+    code: "https://github.com/sheharzad-developer/AIStudyCompanion",
+  },
+  {
     id: "002",
     category: "AI / Machine Learning",
     year: "2025",
+    status: "live",
     title: "AI Chatbot Platform",
     problem:
-      "Supporting several LLM providers and grounding answers in private documents usually devolves into scattered, one-off integrations with no tenant separation.",
+      "Teams want an assistant that answers from their own documents without sending data to a cloud API — and each organization needs its own agent setup, memory, and chat history.",
     credit: "Solo project",
-    tags: ["FastAPI", "Python", "LangChain", "Multi-tenant"],
+    tags: ["FastAPI", "Python", "Ollama", "RAG", "Multi-tenant"],
+    live: "https://chatbot-project-sheharzad.streamlit.app/",
+    code: "https://github.com/sheharzad-developer/Chatbot_Internship",
   },
   {
     id: "013",
@@ -148,16 +164,6 @@ export const projects: Project[] = [
       "A ride-hailing app has to match riders and drivers in real time, track them on a live map, and take payment — all without the UI stalling as locations stream in.",
     credit: "Solo project",
     tags: ["React Native", "FastAPI", "PostGIS", "Live Maps"],
-  },
-  {
-    id: "014",
-    category: "AI / Education",
-    year: "2025",
-    title: "Bilingual AI Study Companion",
-    problem:
-      "Learners studying in English and Urdu need a tutor that switches languages fluidly and stays grounded in sound pedagogy, not generic chatbot replies.",
-    credit: "Solo project",
-    tags: ["React Native", "Node.js", "Claude API"],
   },
   {
     id: "003",

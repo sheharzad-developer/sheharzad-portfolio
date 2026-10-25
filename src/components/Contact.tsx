@@ -1,4 +1,4 @@
-import { Coffee, Download, Mail, MessageCircle, Phone, type LucideIcon } from "lucide-react";
+import { CalendarDays, Coffee, Download, Mail, MessageCircle, Phone, type LucideIcon } from "lucide-react";
 import { profile } from "@/lib/data";
 import { SectionHeading } from "./SectionHeading";
 import { Reveal } from "./Reveal";
@@ -25,7 +25,7 @@ const channels: {
     badgeClass: "bg-emerald-400/10",
   },
   {
-    icon: Coffee,
+    icon: CalendarDays,
     label: "Calendly",
     value: "Book a call",
     subtext: "30-minute discovery call",
@@ -99,7 +99,7 @@ export function Contact() {
           </div>
         </Reveal>
 
-        <Reveal className="mt-10 flex justify-center" delay={100}>
+        <Reveal className="mt-10 flex flex-wrap justify-center gap-4" delay={100}>
           <a
             href={profile.resume}
             download
@@ -107,6 +107,15 @@ export function Contact() {
           >
             <Download className="h-4 w-4 transition-transform group-hover:translate-y-0.5" />
             Download my resume (PDF)
+          </a>
+          <a
+            href={profile.buyMeACoffee}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex items-center gap-2 rounded-full bg-[#FFDD00] px-6 py-3 text-sm font-semibold text-black shadow-[0_0_40px_-8px] shadow-[#FFDD00]/60 transition-transform hover:scale-[1.04]"
+          >
+            <Coffee className="h-4 w-4 transition-transform group-hover:-rotate-12" />
+            Buy me a coffee
           </a>
         </Reveal>
       </div>

@@ -21,8 +21,10 @@ export const profile = {
   phone: "+92 339 0140466",
   whatsapp: "https://wa.me/923390140466",
   calendly: "https://calendly.com/sheharzad-salahuddin9000/new-meeting",
+  buyMeACoffee: "https://buymeacoffee.com/sheharzadsalahuddin",
   resume: "/resume/Sheharzad_Software-Engineer.pdf",
   socials: [
+    { label: "Buy Me a Coffee", href: "https://buymeacoffee.com/sheharzadsalahuddin" },
     { label: "GitHub", href: "https://github.com/sheharzad-developer" },
     {
       label: "LinkedIn",

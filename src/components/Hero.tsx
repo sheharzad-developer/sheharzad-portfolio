@@ -116,11 +116,11 @@ export function Hero() {
           <div className="conic-border float relative h-full w-full rounded-[2.5rem] p-[2px]">
             <div className="relative h-full w-full overflow-hidden rounded-[2.4rem] bg-surface">
               <Image
-                src="/Profile.png"
+                src="/sheharzad.png"
                 alt={profile.name}
                 fill
                 sizes="(max-width: 768px) 240px, 24rem"
-                className="object-cover"
+                className="object-cover object-top"
                 priority
               />
               <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-background/70 to-transparent" />

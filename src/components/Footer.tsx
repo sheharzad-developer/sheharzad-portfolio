@@ -1,3 +1,4 @@
+import { Coffee } from "lucide-react";
 import { profile } from "@/lib/data";
 import type { SVGProps } from "react";
 
@@ -33,6 +34,10 @@ function YoutubeIcon(props: SVGProps<SVGSVGElement>) {
   );
 }
 
+function CoffeeIcon({ className }: SVGProps<SVGSVGElement>) {
+  return <Coffee className={className} />;
+}
+
 const iconMap: Record<
   string,
   {
@@ -60,6 +65,11 @@ const iconMap: Record<
     Icon: YoutubeIcon,
     iconClass: "text-red-500",
     badgeClass: "bg-red-500/10",
+  },
+  "Buy Me a Coffee": {
+    Icon: CoffeeIcon,
+    iconClass: "text-[#FFDD00]",
+    badgeClass: "bg-[#FFDD00]/10",
   },
 };
 
